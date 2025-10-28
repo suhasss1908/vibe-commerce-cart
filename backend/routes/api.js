@@ -46,7 +46,7 @@ router.get('/cart', async (req, res) => {
       total: parseFloat(total.toFixed(2)),
     });
   } catch (err) {
-    console.error(err.message);
+    console.error(err.message); 
     res.status(500).send('Server Error');
   }
 });
@@ -97,13 +97,15 @@ router.post('/cart', async (req, res) => {
  */
 router.delete('/cart/:id', async (req, res) => {
   try {
-    const item = await CartItem.findById(req.params.id);
+    // Find the item by its ID and delete it in one step
+    const item = await CartItem.findByIdAndDelete(req.params.id); 
 
     if (!item) {
+      // If no item was found (and deleted), return 404
       return res.status(404).json({ msg: 'Item not found in cart' });
     }
 
-    await item.remove();
+    // Successfully deleted
     res.json({ msg: 'Item removed from cart' });
 
   } catch (err) {
