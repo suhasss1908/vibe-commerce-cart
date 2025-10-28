@@ -89,3 +89,12 @@ This project is structured as a monorepo with two separate, co-located applicati
 * **`frontend`**: A React application created with `create-react-app`. It manages its state using React hooks (`useState`, `useEffect`). All data is fetched or mutated via `axios` calls to the `backend` API. This keeps the frontend "dumb" and ensures that the server is the single source of truth for the cart's state.
 
 * **State Management**: The primary state (the cart) is managed by the backend/database. The React app simply fetches this state on load (`useEffect`) and re-fetches it after every major action (add/remove/checkout) to ensure the UI is always in sync with the database.
+
+  
+## Screenshots
+
+<img width="1891" height="868" alt="image" src="https://github.com/user-attachments/assets/134b4a79-e944-4976-be1d-ef71b956d130" />
+<img width="647" height="798" alt="image" src="https://github.com/user-attachments/assets/0faf0026-c3b0-4ea7-a8b6-5a02d6d7d141" />
+
+
+
