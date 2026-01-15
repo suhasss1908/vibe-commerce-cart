@@ -2,7 +2,6 @@
 
 This is a full-stack e-commerce shopping cart application built for the Vibe Commerce screening. It features a React frontend, a Node.js/Express backend API, and a MongoDB database for cart persistence.
 
--   **Frontend:** React, Axios
 -   **Backend:** Node.js, Express, Mongoose
 -   **Database:** MongoDB
 -   **Bonus:** Products are fetched live from the [Fake Store API](https://fakestoreapi.com/).
