@@ -1,6 +1,6 @@
 # Vibe Commerce - Full Stack Cart Assignment
 
-This is a full-stack e-commerce shopping cart application built for the Vibe Commerce screening. It features a React frontend, a Node.js/Express backend API, and a MongoDB database for cart persistence.
+This is a full-stack e-commerce shopping cart application built for the Vibe Commerce screening. It features a React frontend, a Node.js/Express backend API, and a database for cart persistence.
 
 -   **Backend:** Node.js, Express
 -   **Database:** MySQL
@@ -14,7 +14,7 @@ This is a full-stack e-commerce shopping cart application built for the Vibe Com
 
 * **Product Listing:** Fetches and displays 20 products from the external Fake Store API.
 * **Add to Cart:** Users can add products to their cart. The backend handles logic for adding new items or incrementing the quantity of existing items.
-* **Cart Management:** A persistent cart sidebar shows all items, quantities, and the total price. Items are stored in a MongoDB database.
+* **Cart Management:** A persistent cart sidebar shows all items, quantities, and the total price. Items are stored in a database.
 * **Remove from Cart:** Users can remove items from the cart.
 * **Mock Checkout:** A checkout modal collects user details (name, email) and, upon submission, "processes" the payment.
 * **Receipt Generation:** The backend clears the cart and returns a mock receipt with a timestamp, item list, and total.
