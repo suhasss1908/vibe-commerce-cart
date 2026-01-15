@@ -2,8 +2,8 @@
 
 This is a full-stack e-commerce shopping cart application built for the Vibe Commerce screening. It features a React frontend, a Node.js/Express backend API, and a MongoDB database for cart persistence.
 
--   **Backend:** Node.js, Express, Mongoose
--   **Database:** MongoDB
+-   **Backend:** Node.js, Express
+-   **Database:** MySQL
 -   **Bonus:** Products are fetched live from the [Fake Store API](https://fakestoreapi.com/).
 
 ---
@@ -79,15 +79,8 @@ All endpoints are prefixed with `/api`.
 
 ---
 
-## Project Explanation
 
-This project is structured as a monorepo with two separate, co-located applications: `frontend` and `backend`.
 
-* **`backend`**: A standard Express server that exposes a REST API. It uses Mongoose to define a `CartItem` schema and interact with a MongoDB database. It serves as a true backend, managing its own state (the cart) while also acting as a proxy to fetch data from an external service (Fake Store API) for the products. This separation of concerns is critical for a real e-commerce app.
-
-* **`frontend`**: A React application created with `create-react-app`. It manages its state using React hooks (`useState`, `useEffect`). All data is fetched or mutated via `axios` calls to the `backend` API. This keeps the frontend "dumb" and ensures that the server is the single source of truth for the cart's state.
-
-* **State Management**: The primary state (the cart) is managed by the backend/database. The React app simply fetches this state on load (`useEffect`) and re-fetches it after every major action (add/remove/checkout) to ensure the UI is always in sync with the database.
 
   
 ## Screenshots
