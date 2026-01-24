@@ -39,7 +39,7 @@ You must have **Node.js** and **MongoDB** (either local or a [MongoDB Atlas](htt
 3.  Create a `.env` file in the `/backend` directory and add your MongoDB connection string:
     ```
     PORT=5001
-    MONGO_URI=your_mongodb_connection_string_here
+    SQL_URI=your_sql_connection_string_here
     ```
 4.  Start the backend server (it will run on `http://localhost:5001`):
     ```bash
